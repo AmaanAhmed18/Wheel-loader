@@ -1,0 +1,60 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 80px;
+    width: 70px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 8px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: anim1 6s ease 1 forwards;
+  }
+  .circle2{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 4px dashed black;
+    animation: anim2 2s ease-in-out 0s infinite alternate-reverse;
+    position: absolute;
+  }
+  .line{
+    height: 2px;
+    width: 12px;
+    border-radius: 10px;
+    background-color: black;
+    position: relative;
+    animation: anim1 6s ease 1 forwards;
+  }
+@keyframes anim1{
+    from{
+        transform: translateX(-150px); 
+    }
+    to{
+        transform: translateX(150px)
+    }
+} 
+@keyframes anim2{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(180deg)
+    }
+} 
